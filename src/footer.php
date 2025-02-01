@@ -1,0 +1,3 @@
+<footer class="text-center text-lg border-t-8 border-black  py-5">
+        <span>Created By <a href="https://l.instagram.com/?u=https%3A%2F%2Fishan01-lx.github.io%2FNew-Portfolio%2F%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAaa3Qgl75UHRb-kF9vp3QoXi35740Q8cD-qboL5pRDTRb8sqvsXk-fCTQL4_aem_bxE4zcT9sh3ifZTZscr1Iw&e=AT3fnUOSGejl4uiW0nf-im0I0HGuY4hAXj0MBsvaUezBx_g26_3Oh7Bkk4CDL9zc01atLOYlzHTYpL5YHut_B4yE2lKJg7M0V9VcaJy-cuGtZendV2_KSYw" class="text-blue-500">Ishan_</a> | <span class="far fa-copyright"></span> 2025 All rights reserved.</span>
+</footer>
