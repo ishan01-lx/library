@@ -12,7 +12,7 @@
         $row = mysqli_fetch_assoc($result);
         $user_count = $row['user_count'];
     } else {
-        $user_count = 0; // Default value if query fails
+        $user_count = 0; 
     }
 
 // Query to count the number of teachers
@@ -22,7 +22,7 @@
         $row2 = mysqli_fetch_assoc($result2);
         $teacher_count = $row2['teacher_count'];
     } else {
-        $teacher_count = 0; // Default value if query fails
+        $teacher_count = 0; 
     }
 
 // Query to count the number of books
@@ -32,7 +32,7 @@
         $row3 = mysqli_fetch_assoc($result3);
         $book_count = $row3['book_count'];
     } else {
-        $book_count = 0; // Default value if query fails
+        $book_count = 0; 
     }
 
     $sql4 = "SELECT COUNT(isbn) as issueBook_count FROM issuebook";
@@ -41,7 +41,7 @@
         $row4 = mysqli_fetch_assoc($result4);
         $issueBook_count = $row4['issueBook_count'];
     } else {
-        $book_count = 0; // Default value if query fails
+        $book_count = 0; 
     }
 
 ?>

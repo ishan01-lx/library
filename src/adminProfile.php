@@ -8,7 +8,6 @@ $stmt->execute();
 $result = $stmt->get_result();
 $user = $result->fetch_assoc();
 
-
 ?>
 
 <div class="container mx-auto px-20">

@@ -10,7 +10,7 @@
                 <li><a href="index.php?page=profile" class="mr-5 hover:text-blue-400">My Profile
                 <i class="fa-solid fa-user"></i>
                 </a></li>
-                <li><a href="index.php?page=about" class="mr-5 hover:text-blue-400"></a></li>
+                <li><a href="index.php?page=hjf" class="mr-5 hover:text-blue-400"></a></li>
                 <li><a href="index.php?page=contact" class="mr-5 hover:text-blue-400"></a></li>
             </ul>
             

@@ -30,6 +30,23 @@ session_start();
         }
     </style>
 
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('login')) {
+                if (urlParams.get('login') === 'success') {
+                    alert('You are successfully logged in!');
+                }
+            } else if (urlParams.has('error')) {
+                if (urlParams.get('error') === 'missing_credentials') {
+                    alert('Error: Missing credentials.');
+                } else if (urlParams.get('error') === 'invalid_credentials') {
+                    alert('Error: Invalid credentials.');
+                }
+            }
+        });
+    </script>
 </head>
 <body>
 
@@ -70,7 +87,7 @@ session_start();
     if ($page === 'main' ||  $page === 'profile') {
         include 'main-navbar.php';
     } 
-    elseif ($page === 'add' || $page === 'update' || $page === 'delete' || $page === 'deleteUser' || $page === 'bookdetail' || $page === 'issueBook' || $page === 'adminProfile' || $page === 'dashboard' || $page === 'admin' || $page === 'user' || $page === 'books' || $page === 'teachermain') {
+    elseif ($page === 'add' || $page === 'update' || $page === 'delete' || $page === 'deleteUser' || $page === 'bookdetail' || $page === 'issueBook' || $page === 'adminProfile' || $page === 'dashboard' || $page === 'admin' || $page === 'user' || $page === 'books' || $page === 'teachermain' || $page === 'requestBook') {
         include 'teachermain_navbar.php';
     }
     else{
@@ -119,21 +136,9 @@ session_start();
         include 'contact.php';
     }
     else if ($page === 'login') {
-        if (isset($_GET['error'])) {
-            if ($_GET['error'] == 'invalid_credentials') {
-                echo "<p style='color: red;'>Invalid username or password.</p>";
-            } elseif ($_GET['error'] == 'missing_credentials') {
-                echo "<p style='color: red;'>Please enter both username and password.</p>";
-            }
-        } elseif (isset($_GET['success']) && $_GET['success'] == 'registered') {
-            echo "<p style='color: green;'>Registration successful. Please log in.</p>";
-        }
         include 'login.php';
     }
     else if ($page === 'register') {
-        if (isset($_GET['error']) && $_GET['error'] == 'username_taken') {
-            echo "<p style='color: red;'>Username already taken. Please choose another one.</p>";
-        }
         include 'register.php';
     }
     else if ($page === 'teacherRegister') {

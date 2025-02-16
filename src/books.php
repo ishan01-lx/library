@@ -1,4 +1,4 @@
-<div class="flex">
+<div class="flex flex-wrap">
     <div class="">
         <?php include 'teacher_navbar.php'; ?>
     </div>
@@ -17,14 +17,18 @@
                 <h1 class="pb-2">Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>!</h1>
                 <p></p>
             </div>
-                <h1 class="text-blue-500 text-3xl">Books in our Library</h1>
+                <h1 class="text-blue-500 text-3xl text-center">Books in our Library</h1>
             </div>
+
+            
+            <div class="flex justify-end w-3/4 ml-24 pl-20">
+            <div class="">
             <div class="">
             <a href="index.php?page=add">
-            <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-1 px-4 border border-blue-500 hover:border-transparent rounded">ADD BOOKS</button>
-        </a>
+                <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-1 px-4 border border-blue-500 hover:border-transparent rounded">ADD BOOKS</button>
+            </a>
             </div>
-            <div id="bookDetails" class="mt-4">
+            <div id="bookDetails" class="mt-4 items-center">
                 <table class="min-w-full bg-white">
                     <thead>
                         <tr>
@@ -64,6 +68,12 @@
                     ?>
                 </tbody>
             </table>
+    </div>
+
+            </div>
+            
+            </div>
+            
     </div>
             </div>
         </div>

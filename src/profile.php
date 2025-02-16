@@ -57,6 +57,7 @@ $issue_count = $issue['issue_count'];
                 <i class="fa-solid fa-book text-4xl"></i>
             </div>
         </a>
+        
         </div>
         
     </div>

@@ -62,7 +62,7 @@ require 'config.php';
                                 echo '<td class="py-2 px-4 border-b">' . $row['username'] . '</td>';
                                 echo '<td class="py-2 px-4 border-b">';
                                 echo '<a href="index.php?page=register&id=' . $row['id'] . '" class="text-blue-500 hover:text-blue-700">Update</a> | ';
-                                echo '<a href="deleteUser.php?id=' . $row['id'] . '" class="text-red-500 hover:text-red-700" onclick="return confirm(\'Are you sure you want to delete this user?\')">Delete</a>';
+                                echo '<a href="deletUser.php?id=' . $row['id'] . '" class="text-red-500 hover:text-red-700" onclick="return confirm(\'Are you sure you want to delete this user?\')">Delete</a>';
                                 echo '</td>';
                                 echo '</tr>';
                             }

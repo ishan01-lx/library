@@ -12,6 +12,7 @@
         </div>
         <p class="text-center text-3xl">Books in our library</p>
     </div>
+    
     <div class="relative mt-8 flex justify-between items-center">
         <div class="block items-center">
         <h2>Search by book name:</h2>

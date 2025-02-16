@@ -39,12 +39,12 @@ if (isset($_POST['submit'])) {
         <?php include 'teacher_navbar.php'; ?>
     </div>
     <div class="mt-4">
-                <a href="index.php?page=teachermain" class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Back</a>
+                <a href="index.php?page=books" class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Back</a>
     </div>
     <div class="w-3/4 left-0">
         <h1 class="text-4xl font-bold text-center pt-14">Issue BOOKS</h1>
         <div id="registerForm" class="text-black my-10 justify-start px-20">
-
+            
         <?php if (isset($error_message)): ?>
                     <div class="bg-red-500 text-white p-4 rounded mb-4">
                         <?php echo $error_message; ?>
